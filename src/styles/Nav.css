@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Temeraire-italienneitalic';
+    src:  url('../fonts/font.woff2') format('woff2'),
+          url('../fonts/font.woff') format('woff');
+}
+.Nav {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    z-index: 800;
+}
+
+.Nav-link {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Temeraire-italienneitalic';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Nav-link:hover {
+    text-transform: uppercase;
+}
+
+#home-icon.Nav-link {
+    padding-top: 2px;
+    float: left;
+    font-size: 25px;
+}
+
+button:focus,
+button:active,
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
