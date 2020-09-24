@@ -10,7 +10,6 @@
     padding-right: 20px;
     padding-top: 15px;
     padding-bottom: 10px;
-    z-index: 800;
 }
 
 .Nav-link {
@@ -40,4 +39,38 @@ button:active,
 button:focus {
     outline: none;
     box-shadow: none;
+}
+
+.Nav-drop-down {
+    float: right;
+}
+
+.Nav-drop-down.isActive {
+    border: 2px solid black;
+}
+
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    80% {
+      transform: scaleY(1.1)
+    }
+    100% {
+      transform: scaleY(1)
+    }
+}
+
+.menu {
+    margin-top: 50px;
+}
+
+.menu.active {
+    animation: growDown 400ms ease-in-out forwards;
+    transform-origin: center;
+}
+
+.menu.hidden {
+    animation: growDown 300ms ease-in-out backwards;
+    display: none;
 }
