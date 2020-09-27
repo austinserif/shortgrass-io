@@ -19,7 +19,7 @@ const Nav = () => {
     }, [isActive]);
 
     return (
-        <div className="Nav">
+        <div className="Nav see-through">
             <Link id="home-icon" className="Nav-link" to="/">Shortgrass</Link>
             <div className="Nav-drop-down" ref={dropDownBox}>
                 <div>
