@@ -8,8 +8,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav/>
-        <Routes/>
+        <div className="sticky see-through">
+          <Nav/>
+        </div>
+        <div className="">
+          <Routes/>
+        </div>
       </BrowserRouter>
     </div>
   );
