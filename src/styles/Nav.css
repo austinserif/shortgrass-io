@@ -6,10 +6,7 @@
 .Nav {
     background-color: transparent;
     overflow: hidden;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 .Nav-link {
