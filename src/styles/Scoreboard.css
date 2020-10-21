@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Temeraire-italienneitalic';
+    src:  url('../fonts/font.woff2') format('woff2'),
+          url('../fonts/font.woff') format('woff');
+}
+
+.Scoreboard {
+    margin: 10px 0px 0px 0px;
+    padding: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+}
+
+div.ticker_element {
+    padding: 0px 30px 0px 5px;
+    overflow: hidden;
+}
+
+div.ticker__element > .Score {
+    color: green;
+    font-size: 15px;
+    font-family: 'Temeraire-italienneitalic';
+    font-weight: 600;
+    margin: 5px 20px 5px 20px;
+    white-space: nowrap;
+}

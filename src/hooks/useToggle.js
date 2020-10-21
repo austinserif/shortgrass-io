@@ -6,4 +6,4 @@ const useToggle = (initial=false) => {
     return [ isActive, toggleButton ];
 }
 
-export default useToggle;   
+export default useToggle;

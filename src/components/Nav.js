@@ -6,7 +6,10 @@ import '../styles/Nav.css';
 import useToggle from '../hooks/useToggle';
 
 const Nav = () => {
+    //set isActive vairable into state to keep track of side nav status
     const [ isActive, toggleButton ] = useToggle();
+
+    //register dropDown and dropDownBox elements into reference using 
     const dropDown = useRef();
     const dropDownBox = useRef();
 
