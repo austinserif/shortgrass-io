@@ -1,7 +1,6 @@
 .Home {
     margin-top: 100px;
     width: 100%;
-    height: 200vh;
 }
 
 #black-section {
@@ -10,4 +9,13 @@
 
 #blue-section {
     background-color: blue;
+}
+
+.Section {
+    height: 100vh;
+}
+
+.SectionBody {
+    /* margin-top: 100px; */
+    height: 80%;
 }

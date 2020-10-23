@@ -4,8 +4,12 @@ import { HamburgerCollapseReverse } from 'react-animated-burgers'
 
 import '../styles/Nav.css';
 import useToggle from '../hooks/useToggle';
+import { useSelector } from 'react-redux';
 
 const Nav = () => {
+
+    const { color } = useSelector(v => (v.backgrounds));
+
     //set isActive vairable into state to keep track of side nav status
     const [ isActive, toggleButton ] = useToggle();
 
@@ -23,20 +27,20 @@ const Nav = () => {
 
     return (
         <div className="Nav see-through">
-            <Link id="home-icon" className="Nav-link" to="/">Shortgrass</Link>
+            <Link id="home-icon" className="Nav-link" to="/" style={{ color }}>Shortgrass</Link>
             <div className="Nav-drop-down" ref={dropDownBox}>
                 <div>
-                    <HamburgerCollapseReverse className="Nav-link" buttonWidth={30} isActive={isActive} toggleButton={toggleButton}/>
+                    <HamburgerCollapseReverse className="Nav-link" buttonWidth={30} isActive={isActive} toggleButton={toggleButton} barColor={color}/>
                 </div>
                 <div className="menu active" ref={dropDown}>
                     <div>
-                        <Link className="Nav-link" to="/technology">Technology</Link>                    
+                        <Link className="Nav-link" to="/technology" style={{ color }}>Technology</Link>                    
                     </div>
                     <div>
-                        <Link className="Nav-link" to="/digest">Digest</Link>                    
+                        <Link className="Nav-link" to="/digest" style={{ color }}>Digest</Link>                    
                     </div>
                     <div>
-                        <Link className="Nav-link" to="/about">About</Link>                    
+                        <Link className="Nav-link" to="/about" style={{ color }}>About</Link>                    
                     </div>
                 </div>
             </div>
