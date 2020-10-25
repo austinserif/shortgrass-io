@@ -17,10 +17,19 @@ function App() {
   useLayoutEffect(() => {
     if (scrollY > 500 && scrollY <= 1000) {
       dispatch(blackBackground());
+      document.querySelectorAll('.Score').forEach((val) => {
+        val.style.color = 'white';
+      });
     } else if (scrollY > 1000) {
       dispatch(blueBackground());
+      document.querySelectorAll('.Score').forEach((val) => {
+        val.style.color = 'white';
+      });
     } else {
       dispatch(whiteBackground());
+      document.querySelectorAll('.Score').forEach((val) => {
+        val.style.color = 'black';
+      });
     }
   }, [scrollY, dispatch]);
 

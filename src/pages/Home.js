@@ -15,7 +15,7 @@ const Home = () => {
         <div className="Home" style={{ backgroundColor, color }}>
             <section className="Section" id="first-section">
                 <div className="SectionBody">
-                    <h1>First Section</h1>
+                    <h1>Technology</h1>
                 </div>
                 <div className="SectionChevron">
                     <Link 
@@ -32,7 +32,7 @@ const Home = () => {
             </section>
             <section className="Section" id="second-section">
                 <div className="SectionBody">
-                    <h1>Second Section</h1>
+                    <h1>Digest</h1>
                 </div>
                 <div className="SectionChevron">
                     <Link 
@@ -49,7 +49,7 @@ const Home = () => {
             </section>
             <section className="Section" id="third-section">
                 <div className="SectionBody">
-                    <h1>Third Section</h1>
+                    <h1>About</h1>
                 </div>
                 <div className="SectionChevron">
                     <Link 
