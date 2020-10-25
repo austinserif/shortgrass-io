@@ -24,7 +24,7 @@ const blueBackground = () => {
     return {
         type: BLUE,
         payload: {
-            backgroundColor: 'navyblue',
+            backgroundColor: 'blue',
             color: 'white'
         }
     }

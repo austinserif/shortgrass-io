@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 
 const Nav = () => {
 
-    const { color } = useSelector(v => (v.backgrounds));
+    const { color, backgroundColor } = useSelector(v => (v.backgrounds));
 
     //set isActive vairable into state to keep track of side nav status
     const [ isActive, toggleButton ] = useToggle();
@@ -26,9 +26,9 @@ const Nav = () => {
     }, [isActive]);
 
     return (
-        <div className="Nav see-through">
+        <div className="Nav">
             <Link id="home-icon" className="Nav-link" to="/" style={{ color }}>Shortgrass</Link>
-            <div className="Nav-drop-down" ref={dropDownBox}>
+            <div className="Nav-drop-down" ref={dropDownBox} style={{ backgroundColor }}>
                 <div>
                     <HamburgerCollapseReverse className="Nav-link" buttonWidth={30} isActive={isActive} toggleButton={toggleButton} barColor={color}/>
                 </div>

@@ -10,7 +10,7 @@ import { blackBackground, blueBackground, whiteBackground } from './actions/acti
 
 function App() {
 
-  const scrollY = useScrollPosition(30);
+  const scrollY = useScrollPosition(60);
 
   const dispatch = useDispatch();
 

@@ -4,9 +4,12 @@
           url('../fonts/font.woff') format('woff');
 }
 .Nav {
-    background-color: transparent;
     overflow: hidden;
     padding: 10px;
+}
+
+.Nav-drop-down-border {
+    border-left: 2px solid black;
 }
 
 .Nav-link {
@@ -82,3 +85,46 @@ button:focus {
 .sticky + .content {
     padding-top: 60px;
 }
+
+@media (max-width: 450px) {
+    .Nav {
+        padding: 0px;
+    }
+
+    #home-icon.Nav-link {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .Nav-drop-down {
+        margin-top: 5px;
+    }
+
+    .Nav-link:hover {
+        text-transform: none;
+    }
+
+    .Nav-link {
+        font-size: 18px;
+    }
+}
+
+/* @media (max-width: 400px) {
+    .Nav-drop-down {
+        z-index: 100;
+        width: 100vw;
+        display: inline-block;
+    }
+
+    .Nav-drop-down.isActive {
+        height: 100vh;
+    }
+
+    .Nav-link {
+        width: 100%;
+    }
+
+    #home-icon.Nav-link {
+        display: inline-block;
+    }
+} */
