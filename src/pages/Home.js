@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { useSelector } from 'react-redux';
+import golfHole from './golf-hole.svg';
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
             <section className="Section" id="first-section">
                 <div className="SectionBody">
                     <h1>Technology</h1>
+                    <img alt="" src={golfHole} width="500px"/>
                 </div>
                 <div className="SectionChevron">
                     <Link 
