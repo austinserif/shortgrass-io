@@ -17,6 +17,15 @@
 }
 
 .SectionBody {
-    padding: 10%;
-    height: 60vh;
+    height: 80vh;
+    margin: 0% 10% 0% 10%;
+}
+
+.SectionBody > h1 {
+    font-size: 80px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.SectionTitle {
+    margin-top: 150px;
 }

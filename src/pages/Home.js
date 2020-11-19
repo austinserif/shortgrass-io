@@ -16,7 +16,7 @@ const Home = () => {
         <div className="Home" style={{ backgroundColor, color }}>
             <section className="Section" id="first-section">
                 <div className="SectionBody">
-                    <h1>Technology</h1>
+                    <h1 className="SectionTitle">Data and Development Toolbox for Golfers</h1>
                     <img alt="" src={golfHole} width="500px"/>
                 </div>
                 <div className="SectionChevron">
